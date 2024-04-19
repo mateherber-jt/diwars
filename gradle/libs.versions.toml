@@ -12,8 +12,7 @@ appcompat = "1.6.1"
 material = "1.11.0"
 dagger = "2.51.1"
 desugar = "2.0.4"
-daggermock = "0.8.5"
-mockito = "5.11.0"
+anvil = "2.5.0-beta07"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,12 +35,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
 dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
 desugar = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugar" }
-daggermock = { group = "com.github.fabioCollini.daggermock", name = "daggermock-kotlin", version.ref = "daggermock" }
-mockito = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 gradle-versions = { id = "com.github.ben-manes.versions", version.ref = "gradleVersions" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-
+anvil = { id = "com.squareup.anvil", version.ref = "anvil" }

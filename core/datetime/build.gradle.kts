@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("kotlin-kapt")
+    alias(libs.plugins.anvil)
 }
 
 android {
@@ -36,7 +36,8 @@ android {
     dependencies {
         coreLibraryDesugaring(libs.desugar)
 
-        kapt(libs.dagger.compiler)
+        implementation(project(":core:di"))
+
         implementation(libs.dagger)
     }
 }

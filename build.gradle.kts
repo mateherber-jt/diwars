@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     alias(libs.plugins.gradle.versions)
     alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.anvil) apply false
 }
 
 tasks.withType<DependencyUpdatesTask>().configureEach {

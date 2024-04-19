@@ -1,7 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.anvil)
     id("kotlin-kapt")
+}
+
+anvil {
+    generateDaggerFactories.set(false)
 }
 
 android {

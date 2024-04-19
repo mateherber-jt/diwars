@@ -1,7 +1,12 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.anvil)
     id("kotlin-kapt")
+}
+
+anvil {
+    generateDaggerFactories.set(false)
 }
 
 android {
@@ -70,6 +75,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.ui.test.junit4)
-    androidTestImplementation(libs.daggermock)
-    androidTestImplementation(libs.mockito)
 }
