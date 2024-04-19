@@ -29,7 +29,7 @@ class MainTest {
 
     @Test
     fun whenMainScreenIsOpenedTheScreenShouldHaveDateTimeText() {
-        composeTestRule.onNodeWithText(ANY_DATE_TIME).assertExists()
+        composeTestRule.onNodeWithText("⏳$ANY_DATE_TIME⏳").assertExists()
     }
 
     companion object {
