@@ -2,8 +2,8 @@ package com.jobandtalent.diwars.di
 
 import com.jobandtalent.di.AppScope
 import com.squareup.anvil.annotations.MergeComponent
-import javax.inject.Singleton
+import com.squareup.anvil.annotations.optional.SingleIn
 
-@Singleton
+@SingleIn(AppScope::class)
 @MergeComponent(AppScope::class)
 interface ApplicationComponent
