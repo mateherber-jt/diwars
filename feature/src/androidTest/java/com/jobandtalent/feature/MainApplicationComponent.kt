@@ -6,4 +6,4 @@ import javax.inject.Singleton
 
 @Singleton
 @MergeComponent(AppScope::class)
-interface MainApplicationComponent : MainViewModelFactoryProvider
+interface MainApplicationComponent
